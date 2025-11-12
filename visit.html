@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>永和保福宮 | 交通資訊</title>
+  <link rel="icon" type="image/png" href="new LOGO-Photoroom.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:#b11f1f; --gold:#f8c96c; --ivory:#f6efe2; --card-bg:rgba(0,0,0,0.55);
+      --radius:14px; --maxw:1100px;
+    }
+    *{box-sizing:border-box;}
+    body {
+      margin:0; font-family:'Noto Sans TC',sans-serif; color:var(--ivory);
+      background:url('S__73736197.jpg') center/cover no-repeat fixed;
+    }
+    header {
+      position:fixed; top:0; width:100%;
+      background:linear-gradient(90deg,rgba(139,26,26,0.9),rgba(177,31,31,0.9));
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 40px; z-index:10;
+      box-shadow:0 4px 12px rgba(0,0,0,0.4);
+    }
+    .brand{display:flex;align-items:center;gap:10px;}
+    .brand img{width:60px;height:60px;border-radius:50%;background:#fff;padding:6px;}
+    .brand .title{font-weight:700;font-size:20px;color:var(--gold);}
+    nav{display:flex;gap:18px;}
+    nav a{color:var(--ivory);text-decoration:none;font-weight:600;}
+    nav a:hover{color:var(--gold);}
+
+    .hero {
+      margin-top:90px; text-align:center;
+      background:rgba(0,0,0,0.55);
+      padding:70px 20px; border-radius:var(--radius);
+      max-width:var(--maxw); margin-left:auto; margin-right:auto;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    }
+    .hero h1 {color:var(--gold); font-size:40px;}
+
+    .content {
+      max-width:var(--maxw); margin:40px auto;
+      background:var(--card-bg); padding:30px; border-radius:var(--radius);
+      border:1px solid rgba(255,215,130,0.2);
+      box-shadow:0 6px 16px rgba(0,0,0,0.4);
+    }
+
+    .map {
+      border-radius:var(--radius);
+      overflow:hidden;
+      margin-bottom:20px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.4);
+    }
+    .map a { display:block; border-radius:var(--radius); overflow:hidden; }
+    .map a:hover { filter:brightness(1.05); transform:scale(1.01); transition:0.3s; }
+
+    h2 { color:var(--gold); border-bottom:2px solid var(--gold); padding-bottom:6px; }
+
+    footer {
+      text-align:center; color:var(--ivory);
+      background:rgba(0,0,0,0.6);
+      padding:12px; border-top:1px solid rgba(255,215,130,0.3);
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="new LOGO-Photoroom.png" alt="永和保福宮 Logo" />
+      <div class="title">永和保福宮</div>
+    </div>
+    <nav>
+      <a href="index.html">關於本宮</a>
+      <a href="news.html">最新公告</a>
+      <a href="events.html">節慶活動</a>
+      <a href="visit.html">交通資訊</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>交通資訊</h1>
+  </div>
+
+  <div class="content">
+    <div class="map">
+      <a href="https://maps.google.com/?q=新北市永和區下溪里仁愛路202巷11號" target="_blank">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6183347711135!2d121.50609537515705!3d25.013081677829906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9c4030c85bf%3A0x76b0c711e181b114!2z5rC45ZKM5L-d56aP5a6u!5e0!3m2!1szh-TW!2stw!4v1760245503667!5m2!1szh-TW!2stw"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </a>
+    </div>
+
+    <h2>地址與交通</h2>
+    <p>📍 地址：
+      <a href="https://maps.google.com/?q=新北市永和區下溪里仁愛路202巷11號" target="_blank" style="color:var(--gold); text-decoration:underline;">
+        新北市永和區下溪里仁愛路202巷11號
+      </a>
+    </p>
+    <p>🚇 捷運：可搭乘捷運中和新蘆線至「頂溪站」1 號出口，步行約 10 分鐘可達。</p>
+    <p>🚌 公車：可搭乘 5、57、214 號公車至「永和國中站」下車，步行約 3 分鐘。</p>
+    <p>🅿️ 停車：廟宇旁設有臨時停車區，建議步行或搭乘大眾運輸前往。</p>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> 永和保福宮 • 版權所有
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

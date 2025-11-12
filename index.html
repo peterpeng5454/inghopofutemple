@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>永和保福宮 | 首頁</title>
+  <link rel="icon" type="image/png" href="new LOGO-Photoroom.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red: #b11f1f;
+      --dark-red: #8b1a1a;
+      --gold: #f8c96c;
+      --ivory: #f6efe2;
+      --card-bg: rgba(0, 0, 0, 0.55);
+      --radius: 14px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: url('S__73736197.jpg') center/cover no-repeat fixed;
+      color: var(--ivory);
+    }
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      background: linear-gradient(90deg, rgba(139,26,26,0.9), rgba(177,31,31,0.9));
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 40px; z-index: 10;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand img { width: 60px; height: 60px; border-radius: 50%; background: #fff; padding: 6px; }
+    .brand .title { font-weight: 700; font-size: 20px; color: var(--gold); }
+    nav { display: flex; gap: 18px; }
+    nav a { color: var(--ivory); text-decoration: none; font-weight: 600; }
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      margin-top: 90px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 80px 20px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      max-width: var(--maxw);
+      margin-left: auto; margin-right: auto;
+    }
+    .hero h1 { color: var(--gold); font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; color: var(--ivory); }
+
+    section {
+      max-width: var(--maxw);
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,215,130,0.2);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+    h2 { color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .floor-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,215,130,0.3);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+    .floor-card h3 { color: var(--gold); margin-top: 0; }
+
+    footer {
+      text-align: center;
+      color: var(--ivory);
+      background: rgba(0,0,0,0.6);
+      padding: 12px;
+      border-top: 1px solid rgba(255,215,130,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="new LOGO-Photoroom.png" alt="永和保福宮 Logo" />
+      <div class="title">永和保福宮</div>
+    </div>
+    <nav>
+      <a href="index.html">關於本宮</a>
+      <a href="news.html">最新公告</a>
+      <a href="events.html">節慶活動</a>
+      <a href="visit.html">交通資訊</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>永和保福宮 — 香火綿延‧護佑蒼生</h1>
+    <p>承襲百年香火，保福宮為在地信仰與文化的象徵，推廣慈善、文化與教育活動。</p>
+  </div>
+
+  <section id="about">
+    <h2>關於保福宮</h2>
+    <p>永和保福宮創立於道光二年（1822 年），主祀保生大帝，為永和地區重要信仰中心。廟宇融合傳統文化與現代管理，持續推動信仰教育與社區公益，香火鼎盛，德澤人間。</p>
+  </section>
+
+  <section id="floors">
+    <h2>樓層介紹</h2>
+    <div class="grid">
+      <div class="floor-card">
+        <h3>一樓：保生大帝殿</h3>
+        <p>主祀保生大帝，副祀文昌帝君、福德正神，象徵醫藥與平安。</p>
+      </div>
+      <div class="floor-card">
+        <h3>二樓：觀音殿</h3>
+        <p>主祀觀音菩薩與註生娘娘，祈求慈悲庇佑與家庭幸福。</p>
+      </div>
+      <div class="floor-card">
+        <h3>三樓：玉皇殿</h3>
+        <p>主祀玉皇上帝與太上老君，祈求天地庇佑與萬事如意。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> 永和保福宮 • 版權所有
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

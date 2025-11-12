@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>永和保福宮 | 聯絡我們</title>
+  <link rel="icon" type="image/png" href="new LOGO-Photoroom.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:#b11f1f; --gold:#f8c96c; --ivory:#f6efe2; --card-bg:rgba(0,0,0,0.55);
+      --radius:14px; --maxw:1100px;
+    }
+    *{box-sizing:border-box;}
+    body {
+      margin:0; font-family:'Noto Sans TC',sans-serif; color:var(--ivory);
+      background:url('S__73736197.jpg') center/cover no-repeat fixed;
+    }
+    header {
+      position:fixed; top:0; width:100%;
+      background:linear-gradient(90deg,rgba(139,26,26,0.9),rgba(177,31,31,0.9));
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 40px; z-index:10;
+      box-shadow:0 4px 12px rgba(0,0,0,0.4);
+    }
+    .brand{display:flex;align-items:center;gap:10px;}
+    .brand img{width:60px;height:60px;border-radius:50%;background:#fff;padding:6px;}
+    .brand .title{font-weight:700;font-size:20px;color:var(--gold);}
+    nav{display:flex;gap:18px;}
+    nav a{color:var(--ivory);text-decoration:none;font-weight:600;}
+    nav a:hover{color:var(--gold);}
+
+    .hero {
+      margin-top:90px; text-align:center;
+      background:rgba(0,0,0,0.55);
+      padding:70px 20px; border-radius:var(--radius);
+      max-width:var(--maxw); margin-left:auto; margin-right:auto;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    }
+    .hero h1 {color:var(--gold); font-size:40px;}
+
+    .content {
+      max-width:var(--maxw); margin:40px auto;
+      background:var(--card-bg); padding:30px; border-radius:var(--radius);
+      border:1px solid rgba(255,215,130,0.2);
+      box-shadow:0 6px 16px rgba(0,0,0,0.4);
+    }
+    h2 { color:var(--gold); border-bottom:2px solid var(--gold); padding-bottom:6px; }
+
+    .info p { margin:6px 0; }
+    .info a { color:var(--gold); text-decoration:underline; }
+
+    form {
+      display:flex; flex-direction:column; gap:14px; margin-top:20px;
+    }
+    input, textarea {
+      padding:10px; border:none; border-radius:8px;
+      font-size:15px; background:rgba(255,255,255,0.9);
+    }
+    button {
+      background:var(--gold); color:#2b2b2b; font-weight:700;
+      border:none; padding:10px 20px; border-radius:8px;
+      cursor:pointer;
+    }
+    button:hover { background:#ffd974; }
+
+    footer {
+      text-align:center; color:var(--ivory);
+      background:rgba(0,0,0,0.6);
+      padding:12px; border-top:1px solid rgba(255,215,130,0.3);
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="new LOGO-Photoroom.png" alt="永和保福宮 Logo" />
+      <div class="title">永和保福宮</div>
+    </div>
+    <nav>
+      <a href="index.html">關於本宮</a>
+      <a href="news.html">最新公告</a>
+      <a href="events.html">節慶活動</a>
+      <a href="visit.html">交通資訊</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>聯絡我們</h1>
+  </div>
+
+  <div class="content">
+    <div class="info">
+      <h2>聯絡資訊</h2>
+      <p>📍 地址：
+        <a href="https://maps.google.com/?q=新北市永和區下溪里仁愛路202巷11號" target="_blank">
+          新北市永和區下溪里仁愛路202巷11號
+        </a>
+      </p>
+      <p>📞 電話：0968-965-597</p>
+      <p>📧 電子郵件：<a href="mailto:peterpeng5454@gmail.com">peterpeng5454@gmail.com</a></p>
+      <p>🕘 服務時間：週一至週五 09:00 - 17:00</p>
+    </div>
+
+    <form action="#" method="post">
+      <h2>留言給我們</h2>
+      <input type="text" name="name" placeholder="您的姓名" required />
+      <input type="email" name="email" placeholder="您的電子郵件" required />
+      <textarea name="message" rows="5" placeholder="請輸入您的留言..." required></textarea>
+      <button type="submit">送出留言</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> 永和保福宮 • 版權所有
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
